@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">新規退院指導投稿</h2>
+        <%= form_with model: @guidance, local: true do |f|%>
+  <div class="field">
+    <%= f.label :name, "指導内容" %><br />
+    <%= f.text_field :name, id:"prototype_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :text, "注意事項" %><br />
+    <%= f.text_area :text, class: :form__text, id:"prototype_catch_copy" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :text, "ちょっとしたコツ" %><br />
+    <%= f.text_area :text, class: :form__text, id:"prototype_concept" %>
+  </div>
+  <% end %>
+    </div>
+  </div>
+</div>
